@@ -1,0 +1,132 @@
+@import "../main/vars";
+
+.footer {
+  background-color: #333333;
+  padding: 100px 0 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(3,1fr);
+  gap: 140px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 82px;
+
+  &__row {
+    a {
+      display: block;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: color 0.4s;
+
+      &:hover {
+        color: $c-primary-hover;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+  }
+}
+
+.footer-contacts {
+  margin-bottom: 20px;
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.5);
+
+  }
+  span {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 5px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  &__link {
+    margin-right: 15px;
+    display: inline-block!important;
+
+    svg {
+      transition: opacity 0.4s;
+    }
+    &:hover {
+      svg {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  a {
+    font-size: 12px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    transition: color 0.4s;
+
+    &:hover {
+      color: $c-primary-hover;
+    }
+  }
+}
+
+
+// 1259.75
+@media (max-width: $lg) {
+  .footer-top {
+    gap: 40px;
+  }
+}
+// 991.75
+@media (max-width: $md) {
+  .footer-top {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+// 767.75
+@media (max-width: $sm) {
+  .footer-top__logo {
+    margin-bottom: 20px;
+  }
+  .footer-contacts {
+    margin-bottom: 10px;
+  }
+  .footer {
+    padding: 45px 0 0;
+  }
+  .footer-top__title {
+    margin-bottom: 10px;
+  }
+  .footer-top {
+    gap: 25px;
+    padding-bottom: 45px;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .footer-copyright {
+    flex-wrap: wrap;
+  }
+}
+

@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){let e=document.querySelectorAll(".header-nav")[0];document.querySelectorAll(".burger")[0].addEventListener("click",function(){e.classList.contains("active")?e.classList.remove("active"):e.classList.add("active")})});

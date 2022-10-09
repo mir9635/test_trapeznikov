@@ -1,0 +1,89 @@
+@import "../main/vars";
+
+.marketing {
+  background-image: url("../imgs/marketing.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 173px 0 208px;
+
+  &__weight {
+    max-width: 780px;
+  }
+
+  &__h1 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 68px;
+    line-height: 1.1;
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin-bottom: 50px;
+  }
+  &__btn1,
+  &__btn2 {
+    padding: 20px 40px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 100px;
+    font-family: inherit;
+  }
+
+  &__btn1 {
+    margin-right: 28px;
+    background-color: #FF5900;
+    border: 0px;
+    &:hover {
+      background-color: #CA4600;
+    }
+  }
+  &__btn2 {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    &:hover {
+      color: #FF5900;
+      border: 1px solid #FF5900;
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+}
+
+// 1259.75
+@media (max-width: $lg) {}
+// 991.75
+@media (max-width: $md) {
+  .marketing {
+    padding: 93px 0 108px;
+  }
+  .marketing__h1 {
+    font-size: 58px;
+  }
+  .marketing__btn1 {
+    margin: 0 30px 20px 0;
+  }
+}
+// 767.75
+@media (max-width: $sm) {
+  .marketing {
+    padding: 43px 0 48px;
+  }
+  .marketing__h1 {
+    font-size: 32px;
+  }
+  .marketing__text {
+    margin-bottom: 30px;
+  }
+
+  .marketing__btn1 {
+    margin: 0 0 20px;
+  }
+  .marketing__btn1, .marketing__btn2 {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}

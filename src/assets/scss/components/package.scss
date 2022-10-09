@@ -1,0 +1,92 @@
+@import "../main/vars";
+
+.packages {
+  padding: 125px 0;
+
+  &__h2 {
+    font-size: 38px;
+    color: #212121;
+    font-weight: 700;
+    margin-bottom: 61px;
+
+    span {
+      color: $c-primary;
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    color: #FFFFFF;
+  }
+
+  &-item {
+    padding: 42px 33px;
+    line-height: 1.4;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 27px;
+    }
+    &__text {
+      font-size: 16px;
+      padding: 18px 0;
+      line-height: 1.4;
+      &--border {
+        border-bottom:1px solid rgba(255, 255, 255, 0.2);
+        border-top:1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+    &__span {
+      font-size: 14px;
+      opacity: 0.5;
+      padding: 20px 0;
+    }
+    &__btn {
+      width: 100%;
+      padding: 18px 10px;
+      margin-top: auto;
+    }
+  }
+}
+
+
+
+// 1259.75
+@media (max-width: $lg) {
+  .packages-list {
+    gap: 10px;
+  }
+
+  .packages-item {
+    padding: 20px 15px;
+  }
+
+}
+// 991.75
+@media (max-width: $md) {
+  .packages {
+    padding: 85px 0;
+  }
+  .packages-list {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+// 767.75
+@media (max-width: $sm) {
+  .packages {
+    padding: 45px 0;
+  }
+  .packages-list {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .packages__h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
